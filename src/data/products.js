@@ -1,0 +1,98 @@
+export const CATEGORIES = ["MacBook", "iPhone", "iPad"];
+
+const IMG = {
+  iphone14: "/images/iPhone%2014.jpg",
+  iphone15ProMax: "/images/iPhone%2015%20Pro%20Max.jpg",
+  macbookAir13M2: "/images/MacBook%20Air%2013%20M2.jpg",
+  macbookPro14M1Pro: "/images/MacBook%20Pro%2014%20M1%20Pro.jpg",
+  // Brak zdjęcia iPada w folderze — tymczasowo używamy placeholdera:
+  ipadPlaceholder: "/images/iPhone%2014.jpg",
+};
+
+export const PRODUCTS = [
+  {
+    id: "mbp14-m1pro-16-512",
+    category: "MacBook",
+    title: 'MacBook Pro 14" M1 Pro',
+    subtitle: "16GB • 512GB • Space Gray",
+    imageUrl: IMG.macbookPro14M1Pro,
+    price: 3399,
+    currency: "zł",
+    condition: "A",
+    warrantyMonths: 6,
+    batteryHealth: 91,
+    cycles: 148,
+    inStock: true,
+    badges: ["Sprawdzone", "Top"],
+    description:
+      "Sprawdzony MacBook Pro 14” z raportem baterii i gwarancją. Idealny do pracy i montażu.",
+  },
+  {
+    id: "mba13-m2-8-256",
+    category: "MacBook",
+    title: 'MacBook Air 13" M2',
+    subtitle: "8GB • 256GB • Starlight",
+    imageUrl: IMG.macbookAir13M2,
+    price: 2899,
+    currency: "zł",
+    condition: "B+",
+    warrantyMonths: 3,
+    batteryHealth: 88,
+    cycles: 220,
+    inStock: true,
+    badges: ["Sprawdzone"],
+    description:
+      "Lekki i szybki Air do codziennej pracy. Stan bardzo dobry, uczciwa bateria.",
+  },
+  {
+    id: "ip15pm-256",
+    category: "iPhone",
+    title: "iPhone 15 Pro Max",
+    subtitle: "256GB • Natural Titanium",
+    imageUrl: IMG.iphone15ProMax,
+    price: 3099,
+    currency: "zł",
+    condition: "A-",
+    warrantyMonths: 6,
+    batteryHealth: 92,
+    cycles: 218,
+    inStock: true,
+    badges: ["Jak nowe", "Sprawdzone"],
+    description:
+      "iPhone w świetnym stanie, sprawdzony, z gwarancją. Gotowy do użycia od razu.",
+  },
+  {
+    id: "ip14-128",
+    category: "iPhone",
+    title: "iPhone 14",
+    subtitle: "128GB • Midnight",
+    imageUrl: IMG.iphone14,
+    price: 1599,
+    currency: "zł",
+    condition: "B",
+    warrantyMonths: 3,
+    batteryHealth: 86,
+    cycles: 334,
+    inStock: true,
+    badges: ["Sprawdzone"],
+    description:
+      "Bardzo dobry wybór w rozsądnym budżecie. Sprawdzone funkcje, bateria OK.",
+  },
+  {
+    id: "ipad-pro-11-m2-128",
+    category: "iPad",
+    title: 'iPad Pro 11" M2',
+    subtitle: "128GB • Wi‑Fi • Space Gray",
+    imageUrl: IMG.ipadPlaceholder,
+    price: 1749,
+    currency: "zł",
+    condition: "A",
+    warrantyMonths: 6,
+    batteryHealth: 95,
+    cycles: null,
+    inStock: false,
+    badges: ["Sprawdzone"],
+    description:
+      "Mocny iPad Pro do pracy kreatywnej. Aktualnie brak — zapytaj o dostępność.",
+  },
+];
